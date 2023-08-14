@@ -8,7 +8,8 @@ apt install xwayland termux-x11-nightly pulseaudio -y
 apt-mark unhold openssl apt termux-tools bash 
 apt update && apt upgrade -y 
 
-# my own needs  
+# my own needs 
+apt update  
 apt install tigervnc xorg-xhost dbus cpufetch virglrenderer-android -y 
 apt install cmake clang make python-pip openssh make -y 
 pip install meson mako yt-dlp 
