@@ -7,21 +7,21 @@
 3. Paste the following 
 
 ```bash 
-curl https://github.com/23xvx/Termux-Setup-Script/setup.sh >> setup.sh 
+curl https://github.com/23xvx/Termux-Setup-Scripts/blob/main/setup.sh >> setup.sh 
 bash setup.sh 
 ```
 
-<p>This will install basic tools and packages , including [proot-distro](https://github.com/termux/proot-distro) and [termux-x11](https://github.com/termux/termux-x11)</p>
+This will install basic tools and packages , including [proot-distro](https://github.com/termux/proot-distro) and [termux-x11](https://github.com/termux/termux-x11)
 
 ### Packages installed :
 git , wget , neofetch , proot-distro , xwayland , termux-x11-nightly , pulseaudio , tsu 
 
 # Other Scripts 
-<p>Also , there are [setup-extra.sh](https://github.com/23xvx/Termux-Seup-Script/setup-extra.sh) for installing basic & extra packages for my own need  </p> 
+Also , there are [setup-extra.sh](https://github.com/23xvx/Termux-Seup-Script/setup-extra.sh) for installing basic & extra packages for my own need   
 <p>To execute it, just paste the following instead of the above one </p>
 
 ```bash 
-curl https://github.com/23xvx/Termux-Setup-Script/setup-extra.sh >> setup-extra.sh 
+curl https://github.com/23xvx/Termux-Setup-Scripts/blob/main/setup-extra.sh >> setup-extra.sh 
 bash setup-extra.sh 
 ```
 <p> This is will install openssh, cmake and virglrenderer-android (GPU acceleration).</p>
