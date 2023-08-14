@@ -7,6 +7,7 @@ apt install git wget neofetch proot-distro which tsu -y
 apt install xwayland termux-x11-nightly pulseaudio -y 
 apt-mark unhold openssl apt termux-tools bash 
 apt update && apt upgrade -y 
+
 # my own needs  
 apt install tigervnc xorg-xhost dbus cpufetch virglrenderer-android -y 
 apt install cmake clang make python-pip openssh make -y 
