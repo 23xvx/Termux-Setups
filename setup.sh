@@ -21,9 +21,7 @@ termux-x11 &" >> $PREFIX/bin/x11
 chmod +x $PREFIX/bin/x11
 chmod +x $PREFIX/bin/startvnc 
 chmod +x $PREFIX/bin/stopvnc
-echo "pulseaudio --start \
-     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
-     --exit-idle-time=-1" >> ~/.bashrc 
+ 
 
 
 # fonts 
