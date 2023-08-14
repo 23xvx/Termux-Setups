@@ -7,7 +7,7 @@
 3. Paste the following 
 
 ```bash 
-curl https://github.com/23xvx/Termux-Setups/blob/main/setup.sh >> setup.sh 
+curl https://raw.githubusercontent.com/23xvx/Termux-Setups/main/setup.sh >> setup.sh 
 bash setup.sh 
 ```
 
