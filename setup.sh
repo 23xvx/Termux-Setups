@@ -26,3 +26,4 @@ chmod +x $PREFIX/bin/stopvnc
 
 # fonts 
 wget https://github.com/23xvx/Termux-Setups/raw/main/files/font.ttf -P ~/.termux/
+termux-reload-settings 
