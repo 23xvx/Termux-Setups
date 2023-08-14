@@ -9,6 +9,7 @@
 ```bash 
 curl https://github.com/23xvx/Termux-Setups/blob/main/setup.sh >> setup.sh 
 bash setup.sh 
+```
 
 ### Packages installed : (Dependent packages not being listed)
 git , wget , neofetch , proot-distro , xwayland , termux-x11-nightly , pulseaudio , tsu , tigervnc , xorg-xhost , dbus , cpufetch , virglrenderer-android , cmake , clang , make , python-pip , openssh , make 
