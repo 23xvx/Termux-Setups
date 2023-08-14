@@ -27,4 +27,4 @@ echo "pulseaudio --start \
 
 
 # fonts 
-wget https://github.com/23xvx/Termux-Setup-Scripts/blob/main/files/font.ttf -P ~/.termux/
+wget https://github.com/23xvx/Termux-Setups/raw/main/files/font.ttf -P ~/.termux/
