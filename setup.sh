@@ -19,7 +19,7 @@ apt install xwayland termux-x11-nightly pulseaudio -y &> /dev/null
 apt-mark unhold openssl apt termux-tools bash &> /dev/null 
 apt update &> /dev/null 
 echo ""
-echo ${G}"Please type Y for upgrading packages"
+echo ${G}"Please type Y for upgrading packages"${W}
 apt upgrade -y 
 
 # my own needs 
@@ -55,14 +55,17 @@ termux-reload-settings
 echo ""
 echo ${G}"Now the fonts looks so cool, right?"
 sleep 2
-clear 
 
 #scripts 
-curl -s https://github.com/23xvx/Termux-Setups/raw/main/scripts/audio >> $PREFIX/bin/audio 
-curl -s https://github.com/23xvx/Termux-Setups/raw/main/scripts/video >> $PREFIX/bin/video 
-curl -s https://github.com/23xvx/Termux-Setups/raw/main/scripts/playlist >> $PREFIX/bin/playlist 
+curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/audio >> $PREFIX/bin/audio 
+curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/video >> $PREFIX/bin/video 
+curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/playlist >> $PREFIX/bin/playlist 
 chmod +x $PREFIX/bin/audio 
 chmod +x $PREFIX/bin/video 
-chmmod +X $PREFIX/bin/playlist 
+chmod +X $PREFIX/bin/playlist 
+
+echo ${G}"Setup Finish !"
+
+
 
 
