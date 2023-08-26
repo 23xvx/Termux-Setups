@@ -1,0 +1,52 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+
+R="$(printf '\033[1;31m')"
+G="$(printf '\033[1;32m')"
+W="$(printf '\033[1;37m')"
+
+
+if [ ! -d "/data/data/com.termux/files/home/storage" ]; then
+    echo ${G}"Please allow storage permission"${W}
+    termux-setup-storage
+fi
+clear 
+echo ${G}"Please put in your youtube URL for download"${W}
+read URL
+echo ${G}"Checking URL, please wait... "
+sleep 1 
+if [[ $URL != http?(s)://youtu* ]]; then
+    echo ${R}"Invalid input"
+    exit 1
+fi 
+
+echo ""
+echo ${G}"Choose your audio format "
+echo ${W}" 1: mp3 "
+echo ${W}" 2: m4a "
+echo ${W}" 3: wav "
+echo ${G}"Please enter number"${W}
+read output
+if [[ "$output" =~ ^([1])$ ]]; then
+    format="mp3"
+elif [[ "$output" =~ ^([2])$ ]]; then
+    format="m4a"
+elif [[ "$output" =~ ^([1])$ ]]; then
+    format="wav"
+else 
+    echo ${R}"Invalid input" ; exit 1
+fi 
+echo ""
+sleep 1
+echo ${G}"Audio will be saved in Downloads directory "
+echo ${G}"Please put in the audio name you want to be saved"${W}
+read audio_name 
+echo 
+sleep 1 
+echo ${G}"Start downloading ...."
+echo ${G}"Please wait ...."${W}
+yt-dlp -x --audio-format $format --audio-quality 0 "$URL" -o "storage/shared/Download/$audio_name"
+sleep 1 
+echo ""
+echo ${G}"Finish Download!"
+echo ${G}"For more usage, please refer to "
+echo ${W}" https://github.com/yt-dlp/yt-dlp"

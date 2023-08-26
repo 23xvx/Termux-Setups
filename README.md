@@ -12,7 +12,14 @@ bash setup.sh
 ```
 
 ### Packages installed : (Dependent packages not being listed)
-git , wget , neofetch , proot-distro , xwayland , termux-x11-nightly , pulseaudio , tsu , tigervnc , xorg-xhost , dbus , cpufetch , virglrenderer-android , cmake , clang , make , python-pip , openssh
+git , wget , neofetch , proot-distro , xwayland , termux-x11-nightly , pulseaudio , tsu , tigervnc , xorg-xhost , dbus , cpufetch , virglrenderer-android , cmake , make , python-pip , openssh
+
+### Credits 
+[termux-app](https://github.com/termux/termux-app)
+[termux-style](https://github.com/adi1090x/termux-style) for font.ttf 
+[yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
+
 
 
 
