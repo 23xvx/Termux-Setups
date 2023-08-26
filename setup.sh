@@ -49,7 +49,7 @@ chmod +x $PREFIX/bin/stopvnc
 
 # fonts 
 echo ""
-echo ${G}"Downloading font type "
+echo ${G}"Downloading font type "${W}
 wget -nv https://github.com/23xvx/Termux-Setups/raw/main/files/font.ttf -P ~/.termux/
 termux-reload-settings 
 echo ""
