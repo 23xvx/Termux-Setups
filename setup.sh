@@ -62,7 +62,7 @@ curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/video
 curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/playlist >> $PREFIX/bin/playlist 
 chmod +x $PREFIX/bin/audio 
 chmod +x $PREFIX/bin/video 
-chmod +X $PREFIX/bin/playlist 
+chmod +x $PREFIX/bin/playlist 
 
 echo ${G}"Setup Finish !"
 
