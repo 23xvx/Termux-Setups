@@ -1,5 +1,5 @@
 # Termux-Setups
-<p>Scipts to setup and install my own needs in and install my own needs in Termux.</p> 
+<p>Scipts to setup and provide my own needs in Termux.</p> 
 
 ## Steps : 
 1. Install termux from [f-droid](https://f-droid.org/en/packages/com.termux/) or [github](https://github.com/termux/termux-app/releases/tag/v0.118.0). Make sure to download universual ones.
