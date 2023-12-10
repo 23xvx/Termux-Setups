@@ -29,18 +29,11 @@ termux-setup-storage
 echo ""
 echo ${G}"Installing my own need packages :)"
 apt update &> /dev/null 
-apt install tigervnc xorg-xhost dbus virglrenderer-android -y &> /dev/null
+apt install tigervnc xorg-xhost -y &> /dev/null
 echo ""
 echo ${G}"It's boring ヽ(・×・´)ゞ "
-apt install cmake make openssh make python-yt-dlp -y &> /dev/null
-echo 
-echo ${G}"Shall we play some game ( ^ω^)"
 echo "vncserver -listen tcp :1 && DISPLAY=:1 xhost + " >> $PREFIX/bin/startvnc 
 echo "vncserver -kill :1" >> $PREFIX/bin/stopvnc
-echo "
-virgl_test_server_android &
-termux-x11 &" >> $PREFIX/bin/x11 
-chmod +x $PREFIX/bin/x11
 chmod +x $PREFIX/bin/startvnc 
 chmod +x $PREFIX/bin/stopvnc
  
@@ -54,14 +47,6 @@ termux-reload-settings
 echo ""
 echo ${G}"Now the fonts looks so cool, right?"
 sleep 2
-
-#scripts 
-curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/audio >> $PREFIX/bin/audio 
-curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/video >> $PREFIX/bin/video 
-curl -s https://raw.githubusercontent.com/23xvx/Termux-Setups/main/scripts/playlist >> $PREFIX/bin/playlist 
-chmod +x $PREFIX/bin/audio 
-chmod +x $PREFIX/bin/video 
-chmod +x $PREFIX/bin/playlist 
 
 echo ${G}"Setup Finish !"
 
