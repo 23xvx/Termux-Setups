@@ -15,9 +15,7 @@ apt install git wget neofetch proot-distro which -y &> /dev/null
 mkdir -p $PREFIX/var/lib/proot-distro/dlcache
 mkdir -p $PREFIX/var/lib/proot-distro/installed-rootfs 
 apt install termux-x11-nightly pulseaudio -y &> /dev/null  
-echo ""
-echo ${G}"Please type Y for upgrading packages"${W}
-apt upgrade -y 
+ 
 
 # my own needs 
 clear 
