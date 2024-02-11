@@ -7,17 +7,14 @@ W="$(printf '\033[1;37m')"
 clear 
 echo ${G}"Updating repositories~ d('v')b" 
 apt update &> /dev/null 
-apt-mark hold openssl apt termux-tools bash &> /dev/null 
-apt upgrade -y &> /dev/null 
+apt -y --with-new-pkgs -o Dpkg::Options::="--force-confnew" upgrade &> /dev/null 
 apt update && apt install x11-repo tur-repo root-repo -y &> /dev/null 
 echo ""
 echo ${G}"Installing packages ─=≡Σ((( つ•̀ω•́)つ "
 apt install git wget neofetch proot-distro which -y &> /dev/null 
 mkdir -p $PREFIX/var/lib/proot-distro/dlcache
 mkdir -p $PREFIX/var/lib/proot-distro/installed-rootfs 
-apt install termux-x11-nightly pulseaudio -y &> /dev/null 
-apt-mark unhold openssl apt termux-tools bash &> /dev/null 
-apt update &> /dev/null 
+apt install termux-x11-nightly pulseaudio -y &> /dev/null  
 echo ""
 echo ${G}"Please type Y for upgrading packages"${W}
 apt upgrade -y 
