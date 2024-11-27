@@ -28,7 +28,7 @@ mkdir -p $PREFIX/var/lib/proot-distro/installed-rootfs
 echo ""
 echo ${G}"Downloading styling files "${W}
 wget -nv https://github.com/23xvx/Termux-Setups/raw/main/files/font.ttf -P ~/.termux/
-wget -nv https://github.com/23xvx/Termux-Setups/raw/main/files/color.properties -P ~/.termux
+wget -nv https://github.com/23xvx/Termux-Setups/raw/main/files/colors.properties -P ~/.termux
 termux-reload-settings || echo -e ${R}"Update settings failed\nrestart termux to apply settings"
 echo ""
 sleep 2
@@ -41,10 +41,16 @@ export SD="/sdcard/Download"
 EOF
 
 cat <<- EOF > "${PREFIX}/bin/ip_address"
-ifconfig | grep broadcast | awk -F ' ' '{ print $2 }'
+ifconfig | grep broadcast | awk -F ' ' '{ print \$2 }'
 EOF
 
+cat <<- EOF > "${PREFIX}/bin/rick"
+curl ascii.live/rick
+EOF
+
+source ~/.profile
 chmod +x ${PREFIX}/bin/ip_address
+chmod +x ${PREFIX}/bin/rick
 
 # end message
 clear

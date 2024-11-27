@@ -3,7 +3,7 @@
 <p>Also contains some *strange* scripts</p>
 
 ## Steps : 
-1. Install termux from [f-droid](https://f-droid.org/en/packages/com.termux/) or [github](https://github.com/termux/termux-app/releases/tag/v0.118.0). Make sure to download universual ones.
+1. Install termux from [f-droid](https://f-droid.org/en/packages/com.termux/) or [github](https://github.com/termux/termux-app/releases/latest). Make sure to download universual ones.
 2. Open termux , allow notice permissions. 
 3. Paste the following 
 
