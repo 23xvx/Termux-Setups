@@ -13,7 +13,7 @@ bash setup.sh
 ```
 
 ### Packages installed : (Dependent packages not being listed)
-git , wget , neofetch , proot-distro , termux-x11-nightly , pulseaudio , virglrenderer-android openssh
+git , wget , neofetch , proot-distro , termux-x11-nightly , pulseaudio , virglrenderer-android , openssh
 
 ### Credits 
 - [termux-app](https://github.com/termux/termux-app)
